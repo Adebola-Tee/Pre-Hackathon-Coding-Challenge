@@ -1,0 +1,26 @@
+.row{
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+grid-column-gap: 40px;
+}
+
+/* .date{
+
+} */
+.line{
+    position: relative;
+    background-color: blue;
+}
+
+.ball {
+    position:absolute;
+    width:20px;
+    height: 20px;
+    background-color: brown;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+}

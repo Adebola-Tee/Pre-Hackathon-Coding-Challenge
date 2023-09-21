@@ -1,9 +1,9 @@
 import './App.css';
-
+import LandingPage from './Pages/LandingPage/page'
 function App() {
   return (
     <div className="App">
-    <p className='text-red-800 font-extrabold'>Hello tailwindcss</p>
+    <LandingPage/>
     </div>
   );
 }
