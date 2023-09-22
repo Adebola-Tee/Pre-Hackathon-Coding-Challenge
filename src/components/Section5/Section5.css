@@ -1,61 +1,72 @@
-.row{
+.row {
     display: grid;
     grid-template-columns: 1fr 2px 1fr;
-grid-column-gap: 40px;
-}
-
-/* .date{
-grid-area: theDate;
-} */
-.line{
+    grid-template-areas: 'theDate theLine theContent';
+    grid-column-gap: 40px;
+    align-items: center; 
+  }
+  
+  .date {
+    grid-area: theDate;
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .line {
+    grid-area: theLine;
     position: relative;
-    background-color: black;
-    /* grid-area: theLine; */
-}
-.ball {
-    position:absolute;
-    width:20px;
+    background-color: white;
+    height: 100%; /* Take the full height of the parent */
+    display: flex; /* Center its child (the .ball) */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .ball {
+    position: absolute;
+    width: 20px;
     height: 20px;
     background-color: brown;
     border: 2px solid yellow;
     border-radius: 50%;
-    bottom:0;
-    left:50%;
-    transform: translateX(-50%);
     transition: all 0.5s;
-}
-/* 
-.content{
+  }
+  
+  .content {
+    grid-area: theContent;
     background-color: red;
     border-radius: 10px;
     padding: 20px;
-    grid-area: theContent;
-}
-.content > h2{
+  }
+  
+  .content > h2 {
     padding-bottom: 8px;
-    color:yellow;
-}
-.content > p{
+    color: yellow;
+  }
+  
+  .content > p {
     line-height: 1.5;
-}
-.row :nth-child(odd){
-grid-template-areas: 'theDate theLine theContent';
-}
-.row :nth-child(even){
-    grid-template-areas: ' theContent theLine theDate';
-    }
-    .row .content, .row .date{
-        margin-bottom: 35px;
-    }
-    .row:nth-child(odd) .date{
-        text-align: right;
-    }
-    .date span{
-        display: inline-block;
-        padding:10px 16px;
-        font-weight: 600;
-        border: 2px solid yellow;
-        border-radius: 25px;
-        position: relative;
-        top: -7px
-    } */
+  }
+  
+  .row:nth-child(odd) {
+    grid-template-areas: 'theDate theLine theContent';
+  }
+  
+  .row:nth-child(even) {
+    grid-template-areas: 'theContent theLine theDate';
+  }
+  
+  .row .content,
+  .row .date {
+    margin-bottom: 35px;
+  }
+  
+  .date span {
+    display: inline-block;
+    padding: 10px 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    position: relative;
+    top: -7px;
+  }
+  

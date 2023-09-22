@@ -4,38 +4,40 @@ const Section3 = () => {
   return (
     <div>
          <img src='./Images/Line.png' alt='horizontal line'/>
-       <div className='bg-[#150E28] flex flex-col md:flex-row-reverse w-full'>
+       <div className='bg-[#150E28] flex flex-col md:flex-row-reverse w-full px-12 pb-8'>
         <div className='md:w-1/2 flex justify-center items-center relative'>
-          <img src='./Images/female-analyst.png' alt='female analyst' />
+        <img src='./Images/female-analyst2.png' alt='female analyst' className='hidden md:block mr-16' />
+          <img src='./Images/female-analyst.png' alt='female analyst' className='md:hidden' />
           {/* Star Image */}
           <img
-          className='star-blink'
+          className='star-blink md:hidden'
             src='./Images/bright-star.png'
             alt='star'
             style={{
               position: 'absolute',
               top: '50%',
-              left: '5%', // Adjust the left position as needed
+              left: '5%', // Adjusted the left position as needed
               width:'10px',
               height:'10px'
             }}
           />
-          {/* arrow Image
           <img
-          className='md:hidden'
-            src='./Images/arrow.png'
-            alt='small image'
+          className='hidden star-blink md:block'
+            src='./Images/bright-star.png'
+            alt='star'
             style={{
               position: 'absolute',
-              bottom: '-10%', // Adjusted the bottom position as shown on the  figma page
-              left: '50%',
-              transform: 'translateX(-50%)', // Center horizontally
+              top: '80%',
+              left: '-5%', // Adjusted the left position as needed
+              width:'26px',
+              height:'32px'
             }}
-          /> */}
+          />
+      
         </div>
-        <div className='w-full md:w-1/2 text-white pt-12 flex flex-col items-center md:items-start'>
+        <div className='w-full md:w-1/2 text-white md:pt-12 flex flex-col items-center md:items-start'>
           <div className='flex'>
-          <div className=''>
+          <div className="md:text-3xl text-center font-bold font-montserrat md:leading-10  md:pt-12">
             <h2 className='flex-nowrap'>
               Rules and
             </h2>
@@ -61,12 +63,12 @@ const Section3 = () => {
       height: '36px', 
       marginLeft: '60px', 
       position: 'relative',
-      top:'6px'
+      top:'10px'
     }}
   />
           </div>
-          <div className='text-center md:text-start md:px-0 pt-3 px-10'>
-          <p className='text-sm'>
+          <div className='text-center font-montserrat  md:text-start md:px-0 pt-3  px-0'>
+          <p className='text-xs md:mr-4'>
             Our tech hackathon is a melting pot of visionaries, and its
             purpose is as clear as day; to shape the future. Whether you're a
             coding genius, a design maverick, or a concept wizard, you'll have
@@ -76,11 +78,12 @@ const Section3 = () => {
           </p>
           </div>
           <img
-          className='star-blink'
+          className='star-blink md:hidden'
             src='./Images/bright-star.png'
             alt='star'
             style={{
                 marginLeft: '10px',
+                marginTop: '10px',
               width:'10px',
               height:'10px'
             }}

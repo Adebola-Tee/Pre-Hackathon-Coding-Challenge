@@ -4,7 +4,7 @@ const Section2 = () => {
   return (
     <div className='pt-4'>
         <img src='./Images/Line.png' alt='horizontal line'/>
-       <div className='bg-[#150E28] flex flex-col md:flex-row w-full'>
+       <div className='bg-[#150E28] flex flex-col md:flex-row w-full pb-12 '>
         <div className='md:w-1/2 flex justify-center items-center relative'>
           <img src='./Images/The big idea.png' alt='networking bulb' />
           {/* Star Image */}
@@ -44,7 +44,7 @@ const Section2 = () => {
         </div>
         <div className='w-full md:w-1/2 text-white pt-12 flex flex-col items-center md:items-start'>
           <div className='flex'>
-          <div className=''>
+          <div className="md:text-3xl text-center font-bold font-montserrat md:leading-10  md:pt-12">
             <h2 className='flex-nowrap'>
               Introduction to getLinked
             </h2>

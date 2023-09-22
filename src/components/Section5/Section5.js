@@ -7,6 +7,7 @@ const TimelineItem = ({ date, title, description }) => (
       <span>{date}</span>
     </section>
     <section className='line'>
+      <span></span>
       <span className='ball'></span>
     </section>
     <section className='content'>
@@ -51,10 +52,12 @@ const Timeline = () => {
   ];
 
   return (
-    <div className='w-full py-5 mx-auto text-black'>
+    <div> <img src='./Images/Line.png' alt='horizontal line'/>
+    <div className='w-full py-5 px-20 text-white bg-[#150E28]'>
       {timelineData.map((item, index) => (
         <TimelineItem key={index} {...item} />
       ))}
+    </div>
     </div>
   );
 };

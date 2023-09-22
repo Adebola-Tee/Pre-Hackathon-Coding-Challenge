@@ -1,6 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
+  const [scrolling, setScrolling] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  const navbarClass = scrolling ? 'bg-[#150E28] bg-opacity-80' : 'bg-[#150E28]';
+  
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -8,13 +26,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className='bg-[#150E28] fixed top-0 left-0 right-0 h-[100px] w-full z-10'>
+    <div className={`fixed top-0 left-0 right-0 w-full z-50 ${navbarClass}`}>
       <div className='hidden pt-12 w-full md:flex justify-between items-center px-20'>
-        {!menuOpen && (
+       
           <h3 className='font-bold font-montserrat text-sm md:text-4xl text-[#FFFFFF]'>
             get<span className='text-[#D434FE]'>linked</span>
           </h3>
-        )}
+  
         <nav className='hidden md:flex justify-between items-center md:space-x-36 lg:space-x-44'>
           <ul className='text-white space-x-8 md:flex flex-row'>
             <li className=''><a href='#'>TimeLine</a></li>
@@ -23,7 +41,7 @@ const Navbar = () => {
             <li className=''><a href='#'>Contact</a></li>
           </ul>
           <button
-            className='text-white font-bold py-2 px-4 rounded-sm'
+            className='text-white font-bold py-2 px-4 rounded-sm  cursor-pointer'
             style={{
               background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)',
             }}
@@ -33,15 +51,16 @@ const Navbar = () => {
           </button>
         </nav>
       </div>
-      {/* mobile view */}
+     {/* Mobile View */}
       <div>
         <div className='w-full bg-[#150E28] h-[100px] flex justify-between items-center px-12'>
           {!menuOpen && (
-            <h3 className='md:hidden font-bold text-sm text-[#FFFFFF]'>
+            <h3 className='md:hidden font-bold font-montserrat text-sm text-[#FFFFFF]'>
               get<span className='text-[#D434FE]'>linked</span>
             </h3>
           )}
-          {/* Mobile View */}
+         
+         
           <img
             className='md:hidden'
             src={menuOpen ? './Images/close-menu.png' : './Images/open-menu.png'}
@@ -62,7 +81,7 @@ const Navbar = () => {
               <li><a href='#'>Contact</a></li>
             </ul>
             <button
-              className='text-white font-bold py-2 px-4 rounded-sm mt-4'
+              className='text-white font-bold py-2 px-4 rounded-sm mt-4 cursor-pointer'
               style={{
                 background: 'linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)',
               }}

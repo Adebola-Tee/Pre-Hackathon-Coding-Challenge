@@ -8,10 +8,10 @@ const Page = () => {
   return (
     <div>
       <Navbar />
-     {/* <Section2/>
+     <Section2/>
      <Section3/>
      <Section4/>
-     <Timeline/> */}
+     {/* <Timeline/> */}
     </div>
   );
 };
