@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetLinked</title>
+    <title>Register page</title>
+    
     <link rel="stylesheet" href="./Asset/Css/style.css">
 </head>
 <body>
-    <div class="container">
+
         <header>
             <h1>get<span class="link">linked</span></h1>
             <nav>
@@ -15,56 +16,77 @@
                 <a href="">Overview</a>
                 <a href="">FAQs</a>
                 <a href="" class="active">Contact</a>
-               
+            
             </nav>
-
-           
                 <a href="" class="register">Register</a>
-           
         </header>
 
         <main>
             <section class="left">
-                <div class="H1">Get in touch</div>
-                <div>Contact <br>Information</div>
-                <div>27,Alara Street <br> Yaba 100012 <br>Lagos State</div>
-                <div>Call Us: 07067981819</div>
-                <div>we are open from Monday-Friday <br> 08:00am-05:00pm</div>
-                <div>
-                    <p>Share on</p>
-                    <div class="social">
-                        <a href=""><img src="./Asset/images/instagram.png" alt="" width="15"></a>
-                        <a href=""><img src="./Asset/images/Vector.png" alt="" width="15"></a>
-                        <a href=""><img src="./Asset/images/facebook.png" alt="" width="15"></a>
-                        <a href=""><img src="./Asset/images/linkedin.png" alt="" width="15"></a>
-                    </div>
-                </div>
+                <img src="./Asset/Images/figma image 2.png" alt="" width="150">
             </section>
 
             <form action="">
+                <h3 class="register-2">Register</h3>
 
-                <div class="Question">
-                <h1>Questions or need assistance?</h1>
-                <h1>Let us know about it!</h1>
+                <div class="note">
+                    <p>Be part of this movement!</p><span><img src="./Asset/Images/Group 3.png" alt="" width="30"></span>
                 </div>
+
+                <h1 class="create">CREATE YOUR ACCOUNT</h1>
 
                 <div>
-                <input type="text" name="First Name" id="name" placeholder="First Name">
-                </div>
+                               <span>
+                                <label for="Team's name" class="name">Team's Name</label>
+                                <input type="text" name="Team's Name" id="Team's Name" placeholder="Enter the name of your group">
+                                </span>
+
+                                <span>
+                                <label for="Phone" class="name">Phone</label>
+                                <input type="text" name="Phone" id="Phone" placeholder="Enter your phone number">
+                                </span>
+                 </div>
+
+                  <div>
+                                <span>
+                                <label for="Email" class="name">Email</label>
+                                <input type="text" name="Email" id="Email" placeholder="Enter your email address">
+                                </span>
+
+                                <span>
+                                <label for="Project Topic" class="name">Project Topic</label>
+                                <input type="text" name="Project Topic" id="Project Topic" placeholder="What is your group project topic">
+                                </span>
+                 </div>
 
                 <div>
-                <input type="email" name="email" id="email" placeholder="Mail">
+                                <span>
+                                <label for="Category" class="name">Category</label>
+                                <select name="Category" id="Category">
+                                <option value="select your Category">Select your category</option>
+                                </select>
+                                </span>
+
+                                <span>
+                                <label for="Group size" class="name">Group Size</label>
+                                <select name="Group size" id="Group size">
+                                <option value="select">Select</option>
+                                </select>
+                                </span>
                 </div>
 
-                <div>
-                <textarea name="" id="" cols="20" rows="5" placeholder="Message"></textarea>
+
+                <div class="footer">
+                              <p>Please review your registration details before submitting</p>
+                             <div>
+                                <input type="checkbox" name="consent" id="consent" value="consent"> <label for="">I agreed with the events terms and conditions and privacy policy</label>
+                             </div>
                 </div>
 
-                <button>Submit</button>
+                <button>Register Now</button>
+
             </form>
         </main>
-
-    </div>
-    
+  
 </body>
 </html>
