@@ -15,9 +15,9 @@ module.exports = {
       purple: 
       {
         100: '#D434FE',
-        200: '#100B20'
+        200: '#100B20',
+        300: '#150E28',
       },
-      primary: '#150E28'
     },
     extend: {
       width: {
