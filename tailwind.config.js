@@ -19,8 +19,17 @@ module.exports = {
       },
       primary: '#150E28'
     },
-    extend: {},
+    extend: {
+      width: {
+        '70': '70%',
+        '50':'50%',
+        '80':'80%'
+       },
+       fontFamily:{
+        montserrat: ['Montserrat']
+       }
+    },
   },
-  plugins: [],
+  plugins:[require('tailwindcss-gradients')],
 }
 
