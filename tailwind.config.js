@@ -10,8 +10,11 @@ module.exports = {
         '50':'50%',
         '80':'80%'
        },
+       fontFamily:{
+        montserrat: ['Montserrat']
+       }
     },
   },
-  plugins: [],
+  plugins:[require('tailwindcss-gradients')],
 }
 

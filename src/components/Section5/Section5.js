@@ -1,26 +1,62 @@
 import React from 'react';
-import './Section5.css'
-const Timeline = () => (
-  <div className='pt-12 pb-8'>
-   <div className='row'>
-    <section className='date pl-8'>
-        <span>Jan 03, 2022</span>
+import './Section5.css';
+
+const TimelineItem = ({ date, title, description }) => (
+  <div className='row'>
+    <section className='date'>
+      <span>{date}</span>
     </section>
     <section className='line'>
-    <div className="border-l-2 border-purple-500 h-32"></div>
-    <div className="flex flex-col items-center space-y-2">
-      <div className="w-6 h-6 rounded-full bg-purple-500 text-white flex items-center justify-center">
-        1
-      </div>
-    </div>
+      <span className='ball'></span>
     </section>
     <section className='content'>
-        <h2>hello</h2>
-        <p>thheek fhhr4 ej</p>
+      <h2>{title}</h2>
+      <p>{description}</p>
     </section>
-   </div>
-   
   </div>
 );
+
+const Timeline = () => {
+  const timelineData = [
+    {
+      date: '3rd Jan, 2023',
+      title: 'Some title',
+      description: 'lorem ipsum dolar sit imer, conde lorem ipsum dolar sit imer, condelorem ipsum dolar sit imer, conde',
+    },
+    {
+      date: '4th Jan, 2023',
+      title: 'Another title',
+      description: 'lorem ipsum dolar sit imer, conde lorem ipsum dolar sit imer, condelorem ipsum dolar sit imer, conde',
+    },
+    {
+      date: '5th Jan, 2023',
+      title: 'Third title',
+      description: 'lorem ipsum dolar sit imer, conde lorem ipsum dolar sit imer, condelorem ipsum dolar sit imer, conde',
+    },
+    {
+      date: '6th Jan, 2023',
+      title: 'Fourth title',
+      description: 'lorem ipsum dolar sit imer, conde lorem ipsum dolar sit imer, condelorem ipsum dolar sit imer, conde',
+    },
+    {
+      date: '7th Jan, 2023',
+      title: 'Fifth title',
+      description: 'lorem ipsum dolar sit imer, conde lorem ipsum dolar sit imer, condelorem ipsum dolar sit imer, conde',
+    },
+    {
+      date: '8th Jan, 2023',
+      title: 'Sixth title',
+      description: 'lorem ipsum dolar sit imer, conde lorem ipsum dolar sit imer, condelorem ipsum dolar sit imer, conde',
+    },
+  ];
+
+  return (
+    <div className='w-full py-5 mx-auto text-black'>
+      {timelineData.map((item, index) => (
+        <TimelineItem key={index} {...item} />
+      ))}
+    </div>
+  );
+};
 
 export default Timeline;

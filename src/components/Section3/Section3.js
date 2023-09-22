@@ -2,7 +2,8 @@ import React from 'react'
 
 const Section3 = () => {
   return (
-    <div className=" border border-solid border-black transform  text-white bg-opacity-2e">
+    <div>
+         <img src='./Images/Line.png' alt='horizontal line'/>
        <div className='bg-[#150E28] flex flex-col md:flex-row-reverse w-full'>
         <div className='md:w-1/2 flex justify-center items-center relative'>
           <img src='./Images/female-analyst.png' alt='female analyst' />

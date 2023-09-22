@@ -2,8 +2,8 @@ import React from 'react'
 import './Section2.css';
 const Section2 = () => {
   return (
-    <div>
-        <hr className='border border-solid  '/>
+    <div className='pt-4'>
+        <img src='./Images/Line.png' alt='horizontal line'/>
        <div className='bg-[#150E28] flex flex-col md:flex-row w-full'>
         <div className='md:w-1/2 flex justify-center items-center relative'>
           <img src='./Images/The big idea.png' alt='networking bulb' />
