@@ -5,8 +5,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'serif': ['Playfair Display', 'sans-serif'],
+      'serif': ['Clash Display', 'sans-serif'],
       'sans': ['Montserrat', 'sans-serif'],
+      'sans-serif': ['Unica One', 'sans-serif'],
     },
     colors:{
       'black': '#000000',
@@ -16,6 +17,7 @@ module.exports = {
         100: '#D434FE',
         200: '#100B20'
       },
+      primary: '#150E28'
     },
     extend: {},
   },
