@@ -1,19 +1,16 @@
 import React from "react";
-import {
-  InstagramLogo,
-  FacebookLogo,
-  LinkedinLogo,
-  PhoneCall,
-  MapPin,
-} from "@phosphor-icons/react";
-import { PiStarFourFill } from "react-icons/pi";
+import {CgPhone} from "react-icons/cg";
+import { PiStarFourFill, PiMapPinFill } from "react-icons/pi";
+import instagram from "../assets/images/instagram.png";
 import x from "../assets/images/x.png";
+import facebook from "../assets/images/facebook.png";
+import linkedin from "../assets/images/linkedin.png";
 
 const Footer = () => {
   return (
     <div className="flex flex-col gap-5 bg-purple-200 max-w-full md:w-[1440px] w-full justify-center md:py-16 py-8 px-8">
-      <div className="flex md:flex-row flex-col md:gap-16 gap-10">
-        <PiStarFourFill size={50} color="#FFFFFF" className="md:block hidden mt-5" />
+      <div className="flex md:flex-row flex-col md:gap-20 gap-10 md:px-8">
+        <PiStarFourFill size={70} color="#FFFFFF" className="md:block hidden mt-5" />
 
         <div className="flex flex-col md:gap-20 gap-10">
           <div className="flex flex-row gap-6">
@@ -36,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="text-white font-sans text-xs font-normal ml-11">
+          <p className="text-white font-sans text-xs font-normal md:ml-0 ml-11">
             Terms of Use <span className="text-purple-100 px-4">|</span> Privacy
             Policy
           </p>
@@ -46,13 +43,13 @@ const Footer = () => {
           <PiStarFourFill size={20} color="#D434FE" />
         </div>
 
-        <div className="flex flex-col gap-4 md:pt-4 ml-11">
+        <div className="flex flex-col gap-4 md:pt-4 md:ml-0 ml-11">
           <h4 className="text-sm text-purple-100 font-semibold font-sans">
             Useful Links
           </h4>
 
           <div className="flex flex-row gap-14">
-            <ul className="text-white text-xs font-normal font-sans flex flex-col gap-3">
+            <ul className="text-white text-sm font-normal font-sans flex flex-col gap-3">
               <li>Overview</li>
               <li>Timeline</li>
               <li>FAQs</li>
@@ -66,16 +63,16 @@ const Footer = () => {
             />
           </div>
 
-          <div className="flex flex-row gap-6">
-            <h4 className="text-purple-100 text-sm font-normal font-sans pt-2">
+          <div className="flex flex-row gap-4">
+            <h4 className="text-purple-100 text-sm font-normal font-sans pt-2 md:w-[150px]">
               Follow Us
             </h4>
 
             <div className="flex flex-row gap-4">
-              <InstagramLogo size={32} color="#FFFFFF" />
-              <img src={x} alt="X" width={20} height={10} />
-              <FacebookLogo size={32} color="#FFFFFF" />
-              <LinkedinLogo size={32} color="#FFFFFF" />
+              <img src={instagram} alt="instagram" className="w-[30px] h-[30px] mt-2" />
+              <img src={x} alt="X" className="w-[30px] h-[22px] mt-3" />
+              <img src={facebook} alt="facebook" className="md:w-[30px] w-[20px] h-[30px] mt-2" />
+              <img src={linkedin} alt="linkedin" className="w-[30px] h-[30px] mt-2" />
             </div>
           </div>
         </div>
@@ -88,23 +85,23 @@ const Footer = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-4 md:pt-4 ml-11">
+        <div className="flex flex-col gap-4 md:pt-4 md:ml-0 ml-11">
           <h4 className="text-sm text-purple-100 font-semibold font-sans">
             Contact Us
           </h4>
 
           <div className="flex flex-row gap-16">
-            <ul className="text-white text-xs font-normal font-sans flex flex-col gap-3">
+            <ul className="text-white text-xs font-normal font-sans flex flex-col gap-3 md:w-[200px]">
               <li className="flex flex-row gap-3">
-                <PhoneCall size={16} color="#FFFFFF" />{" "}
-                <span className="text-xs font-sans font-normal">
+                <CgPhone size={16} color="#FFFFFF" />
+                <span className="text-sm font-sans font-normal">
                   +234 6707653444
                 </span>
               </li>
               <li className="flex flex-row gap-3">
-                <MapPin size={16} color="#FFFFFF" />{" "}
-                <span className="text-xs font-sans font-normal">
-                  {" "}
+                <PiMapPinFill size={16} color="#FFFFFF" />
+                <span className="text-sm font-sans font-normal">
+                  
                   27,Alara Street <br /> Yaba 100012 <br />
                   Lagos State
                 </span>
