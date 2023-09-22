@@ -5,7 +5,7 @@ const Section3 = () => {
     <div>
          <img src='./Images/Line.png' alt='horizontal line'/>
        <div className='bg-[#150E28] flex flex-col md:flex-row-reverse w-full px-12 pb-8'>
-        <div className='md:w-1/2 flex justify-center items-center relative'>
+        <div className='left md:w-1/2 flex justify-center items-center relative' data-aos="zoom-in-left">
         <img src='./Images/female-analyst2.png' alt='female analyst' className='hidden md:block mr-16' />
           <img src='./Images/female-analyst.png' alt='female analyst' className='md:hidden' />
           {/* Star Image */}
@@ -35,7 +35,7 @@ const Section3 = () => {
           />
       
         </div>
-        <div className='w-full md:w-1/2 text-white md:pt-12 flex flex-col items-center md:items-start'>
+        <div className='right w-full md:w-1/2 text-white md:pt-12 flex flex-col items-center md:items-start' data-aos="zoom-in-right" >
           <div className='flex'>
           <div className="md:text-3xl text-center font-bold font-montserrat md:leading-10  md:pt-12">
             <h2 className='flex-nowrap'>

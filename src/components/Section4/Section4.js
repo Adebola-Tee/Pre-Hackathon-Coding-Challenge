@@ -6,7 +6,10 @@ const Section4 = () => {
       <img src="./Images/Line.png" alt="horizontal line" />
 
       <div className="bg-[#150E28] pt-4 pb-20 flex flex-col md:flex-row w-full">
-        <div className="left pt-20 px-12 md:px-0 md:w-1/2 pl-12 flex justify-center items-center relative">
+        <div
+          className="left pt-20 px-12 md:px-0 md:w-1/2 pl-12 flex justify-center items-center relative"
+          data-aos="zoom-in-left"
+        >
           <img
             className="star-blink absolute mt-6 left-36"
             src="./Images/star pu2.png"
@@ -56,7 +59,10 @@ const Section4 = () => {
             }}
           />
         </div>
-        <div className="right w-full md:w-1/2  text-white pt-12 flex flex-col items-center px-4 md:px-0 md:pr-16 md:items-start">
+        <div
+          className="right w-full md:w-1/2  text-white pt-12 flex flex-col items-center px-4 md:px-0 md:pr-16 md:items-start"
+          data-aos="zoom-in-right"
+        >
           <div className="flex">
             <div className="md:text-3xl text-center font-bold font-montserrat md:leading-10">
               <h2 className="flex-nowrap ">Judging Criteria</h2>
@@ -131,10 +137,12 @@ const Section4 = () => {
             className="hidden md:block mt-4 "
             alt="register button"
           />
-          <img src='./Images/Registerbutton2.png'
-           className="md:hidden mt-4 "
-           alt="register button"/>
-            <img
+          <img
+            src="./Images/Registerbutton2.png"
+            className="md:hidden mt-4 "
+            alt="register button"
+          />
+          <img
             className="md:hidden star-blink relative -right-28 bottom-8"
             src="./Images/bright-star.png"
             alt="star"
@@ -144,7 +152,6 @@ const Section4 = () => {
             }}
           />
         </div>
-       
       </div>
     </div>
   );
