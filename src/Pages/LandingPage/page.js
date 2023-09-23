@@ -3,10 +3,14 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from '../../components/Navbar/Navbar';
-import Section2 from '../../components/Section2/Section2';
-import Section3 from '../../components/Section3/Section3';
-import Section4 from '../../components/Section4/Section4';
-import Timeline from '../../components/Section5/Section5';
+import IntroductionSection from '../../components/Introduction/Introduction';
+import RulesSection from '../../components/RuleAndGuidelines/RulesAndGuidelines';
+import JudgingCriteriaSection  from '../../components/JudgingCriteria/JudgingCriteria';
+import FaqsCombinedSection from '../../components/FAQ/FAQ';
+import TimelineSection from '../../components/Timeline/Timeline';
+import PrizesSection  from '../../components/Prizes/PrizesSection';
+import PartnersSection from '../../components/Partners/Partners';
+import PoliciesPolicyAndTerms from '../../components/Section9/Section9';
 const Page = () => {
 
   useEffect(()=>{
@@ -24,10 +28,14 @@ const Page = () => {
   return (
     <div>
       <Navbar />
-     <Section2/>
-     <Section3/>
-     <Section4/>
-     {/* <Timeline/> */}
+     <IntroductionSection/>
+     <RulesSection/>
+     <JudgingCriteriaSection/>
+     <FaqsCombinedSection/>
+     <TimelineSection/>
+     <PrizesSection/>
+     <PartnersSection/>
+     <PoliciesPolicyAndTerms/>
     </div>
   );
 };

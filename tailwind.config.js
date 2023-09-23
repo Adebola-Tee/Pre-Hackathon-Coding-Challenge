@@ -12,7 +12,9 @@ module.exports = {
        },
        fontFamily:{
         montserrat: ['Montserrat']
-       }
+       },
+       // Enable group-hover variant
+      backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
     },
   },
   plugins:[require('tailwindcss-gradients')],
