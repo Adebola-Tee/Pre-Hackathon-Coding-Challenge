@@ -15,12 +15,21 @@ module.exports = {
       purple: 
       {
         100: '#D434FE',
-        200: '#100B20'
+        200: '#100B20',
+        300: '#150E28',
       },
-      primary: '#150E28'
     },
-    extend: {},
+    extend: {
+      width: {
+        '70': '70%',
+        '50':'50%',
+        '80':'80%'
+       },
+       fontFamily:{
+        montserrat: ['Montserrat']
+       }
+    },
   },
-  plugins: [],
+  plugins:[require('tailwindcss-gradients')],
 }
 

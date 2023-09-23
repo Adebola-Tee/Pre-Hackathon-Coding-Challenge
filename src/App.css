@@ -1,14 +1,14 @@
-@import url('https://fonts.cdnfonts.com/css/montserrat');
-@import url('https://fonts.cdnfonts.com/css/unica-one');
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://fonts.cdnfonts.com/css/unica-one");
 
-@font-face{
-  font-family: 'Clash Display', sans-serif;
-  src: url('./assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
-       url('./assets/fonts/ClashDisplay-Regular.woff') format('woff');
+@font-face {
+  font-family: "Clash Display", sans-serif;
+  src: url("./assets/fonts/ClashDisplay-Regular.woff2") format("woff2"),
+    url("./assets/fonts/ClashDisplay-Regular.woff") format("woff");
 }
 
-*{
-  font-family: 'Clash Display', sans-serif;
+* {
+  font-family: "Clash Display", sans-serif;
 }
 
 button.register {
@@ -20,4 +20,14 @@ button.register {
     #ff26b9 99.99%,
     #fe34b9 100%
   );
+}
+
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
